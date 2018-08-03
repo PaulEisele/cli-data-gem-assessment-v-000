@@ -54,8 +54,8 @@ end
     puts ""
     puts"List of Recipes: "
     puts ""
-    FindRecipe::Recipe.all.each_with_index do|recipe, index|
-      puts "#{index+1}. #{recipe.title}"
+    FindRecipe::Recipe.all.each.with_index(1) do|recipe, index|
+      puts "#{index}. #{recipe.title}"
     end
   end
 
