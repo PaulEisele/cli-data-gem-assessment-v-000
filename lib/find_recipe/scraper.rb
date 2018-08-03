@@ -14,7 +14,7 @@ class FindRecipe::Scraper
     title = i.css("a.full-item-title").text.strip
     description = i.css("div.full-item-dek p").text.strip
     url = "https://www.delish.com"+i.css("a.full-item-title").attr("href").value
-    binding.pry
+    #binding.pry
     FindRecipe::Recipe.new(title, url, description)
     end
   end
