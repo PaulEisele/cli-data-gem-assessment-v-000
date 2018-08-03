@@ -9,6 +9,7 @@ class FindRecipe::Recipe
     @url = url
     @description = description
     @index = index
+    binding.pry
     @@all << self
   end
 
