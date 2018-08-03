@@ -61,7 +61,6 @@ end
 
   def print(recipe)
     puts ""
-    binding.pry 
     puts "#{recipe.description}"
     puts "#{recipe.url}"
     puts ""
