@@ -13,6 +13,10 @@ class FindRecipe::Recipe
     @@all << self
   end
 
+  def self.first_five
+    self.all[0..4]
+  end
+
   def self.all
     @@all
   end
