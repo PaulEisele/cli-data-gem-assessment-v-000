@@ -29,7 +29,7 @@ class FindRecipe::Recipe
   end
 
   def description
-    puts "hello"
+    binding.pry
     @description ||= i.css("div.full-item-dek p").text.strip
   end
 
